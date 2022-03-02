@@ -24,7 +24,10 @@ function Section({
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
           </ButtonGroup>
         </Fade>
-        <DownArrow src="/images/down-arrow.svg"></DownArrow>
+        <DownArrow
+          src="/images/down-arrow.svg"
+          onClick={() => window.scrollBy(0, window.innerHeight)}
+        ></DownArrow>
       </Buttons>
     </Wrap>
   );
@@ -37,7 +40,6 @@ const Wrap = styled.div`
   height: 100vh;
   background-size: cover;
   background-position: center;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -85,6 +87,7 @@ const DownArrow = styled.img`
   height: 40px;
   overflow-x: hidden;
   animation: animateDown infinite 1.5s;
+  cursor: pointer;
 `;
 
 const Buttons = styled.div``;
