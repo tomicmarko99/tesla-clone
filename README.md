@@ -1,1 +1,1 @@
-Tesla Clone made using React JS✅✅
+Tesla Clone is made using React JS✅✅
